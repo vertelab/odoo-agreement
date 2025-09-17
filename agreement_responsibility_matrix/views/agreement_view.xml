@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <record id="partner_agreement_form_view" model="ir.ui.view">
+            <field name="name">agreement.form</field>
+            <field name="model">agreement</field>
+            <field name="inherit_id" ref="agreement_legal.partner_agreement_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page string="Responsibility Matrix">
+                        <field name="agreement_responsibility_line_ids">
+                            <list>
+                                <field name="name"/>
+                                <field name="owner"/>
+                                <field name="maintenance_responsibility"/>
+                                <field name="remarks"/>
+                                <field name="agreement_responsibility_category_id"/>
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

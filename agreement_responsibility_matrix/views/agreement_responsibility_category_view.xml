@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_agreement_responsibility_category_form" model="ir.ui.view">
+            <field name="name">agreement.responsibility.category.form</field>
+            <field name="model">agreement.responsibility.category</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="parent_id"/>
+                            <field name="complete_name" invisible="1"/>
+                            <field name="agreement_responsibility_line_ids" nolabel="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="owner"/>
+                                    <field name="maintenance_responsibility"/>
+                                    <field name="remarks"/>
+                                </list>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_agreement_responsibility_category_list" model="ir.ui.view">
+            <field name="name">agreement.responsibility.category.list</field>
+            <field name="model">agreement.responsibility.category</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="complete_name"/>
+                    <field name="name"/>
+                    <field name="parent_id"/>
+                    <field name="agreement_responsibility_line_ids"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_agreement_responsibility_category" model="ir.actions.act_window">
+            <field name="name">Responsibility Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">agreement.responsibility.category</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem name="Responsibility Category" id="agreement_responsibility_category" sequence="10" parent="agreement_legal.agreement_configuration" action="action_agreement_responsibility_category"/>
+
+
+    </data>
+</odoo>
