@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_responsibility_matrix
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20250911\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-18 13:01+0000\n"
+"PO-Revision-Date: 2025-09-18 13:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__agreement_id
+msgid "Agreement"
+msgstr "Avtal"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model,name:agreement_responsibility_matrix.model_agreement
+msgid "Agreement Extension"
+msgstr "Relaterad fastighet"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model,name:agreement_responsibility_matrix.model_agreement_responsibility_category
+msgid "Agreement Responsibility Category"
+msgstr "Avtal Ansvar Kategori"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model,name:agreement_responsibility_matrix.model_agreement_responsibility_line
+msgid "Agreement Responsibility Line"
+msgstr "Avtal Ansvarslinje"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement__agreement_responsibility_line_ids
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__agreement_responsibility_line_ids
+msgid "Agreement Responsibility Lines"
+msgstr "Avtal Ansvarslinjer"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__agreement_responsibility_category_id
+msgid "Category"
+msgstr "Kategori"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__child_id
+msgid "Child Categories"
+msgstr "Kategorier för barn"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__complete_name
+msgid "Complete Name"
+msgstr "Fullständigt namn"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__create_uid
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__create_uid
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__create_date
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__create_date
+msgid "Created on"
+msgstr "Skapad på"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__display_name
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__id
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields.selection,name:agreement_responsibility_matrix.selection__agreement_responsibility_line__maintenance_responsibility__landlord
+#: model:ir.model.fields.selection,name:agreement_responsibility_matrix.selection__agreement_responsibility_line__owner__landlord
+msgid "Landlord"
+msgstr "Hyresvärd"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__write_uid
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__write_uid
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__write_date
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__write_date
+msgid "Last Updated on"
+msgstr "Senast uppdaterad den"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__maintenance_responsibility
+msgid "Maintenance Responsibility"
+msgstr "Ansvar för underhåll"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__name
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__name
+msgid "Name"
+msgstr "Namn"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__owner
+msgid "Owner"
+msgstr "Ägare"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__parent_id
+msgid "Parent"
+msgstr "Förälder"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__parent_path
+msgid "Parent Path"
+msgstr "Föräldrarnas väg"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__remarks
+msgid "Remarks"
+msgstr "Anmärkningar"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.actions.act_window,name:agreement_responsibility_matrix.action_agreement_responsibility_category
+#: model:ir.ui.menu,name:agreement_responsibility_matrix.agreement_responsibility_category
+msgid "Responsibility Category"
+msgstr "Ansvarskategori"
+
+#. module: agreement_responsibility_matrix
+#: model_terms:ir.ui.view,arch_db:agreement_responsibility_matrix.partner_agreement_form_view
+msgid "Responsibility Matrix"
+msgstr "Ansvarsmatris"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields.selection,name:agreement_responsibility_matrix.selection__agreement_responsibility_line__maintenance_responsibility__tenant
+#: model:ir.model.fields.selection,name:agreement_responsibility_matrix.selection__agreement_responsibility_line__owner__tenant
+msgid "Tenant"
+msgstr "Hyresgäst"
