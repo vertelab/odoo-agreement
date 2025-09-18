@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="hyresavtal" model="agreement">
+    <field name="name">Hyresavtal</field>
+    <field name="is_template">True</field>
+    <field name="description">Hyresavtal</field>
+    <field name="agreement_type_id" ref="agreement_legal.agreement_type_contract" />
+    <field name="start_date">2025-09-02</field>
+    <field name="end_date">2025-09-02</field>
+    <field name="signature_date">2035-09-02</field>
+  </record>
+  
+  <record id="fastigheten" model="agreement.responsibility.category">
+    <field name="name">Fastigheten</field>
+  </record>
+
+  <record id="installationer" model="agreement.responsibility.category">
+    <field name="name">Installationer</field>
+  </record>
+
+  <record id="restaurangens_lokaler" model="agreement.responsibility.category">
+    <field name="name">Restaurangens lokaler</field>
+  </record>
+
+
+
+
+
+ 
+  <record id="byggnaden" model="agreement.responsibility.category">
+    <field name="name">Byggnaden</field>
+    <field name="parent_id" ref="fastigheten" />
+  </record>
+  <record id="utomhusytor_tomtmark" model="agreement.responsibility.category">
+    <field name="name">Byggnaden</field>
+    <field name="parent_id" ref="fastigheten" />
+  </record>
+
+
+
+
+
+   <record id="varme" model="agreement.responsibility.category">
+    <field name="name">Värme</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+   <record id="vatten_avlopp" model="agreement.responsibility.category">
+    <field name="name">Vatten, avlopp</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+   <record id="el" model="agreement.responsibility.category">
+    <field name="name">El</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+   <record id="kyla_ventilation" model="agreement.responsibility.category">
+    <field name="name">Kyla och ventilation</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+   <record id="imkanaler_ventilation" model="agreement.responsibility.category">
+    <field name="name">Imkanaler och ventilation</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+  
+   <record id="las_larm" model="agreement.responsibility.category">
+    <field name="name">Lås, larm och övervakning</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+   <record id="belysning" model="agreement.responsibility.category">
+    <field name="name">Belysning</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+  
+  <record id="hissar" model="agreement.responsibility.category">
+    <field name="name">Hissar</field>
+    <field name="parent_id" ref="installationer" />
+  </record>
+
+  <record id="matsal" model="agreement.responsibility.category">
+    <field name="name">Matsal</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+  
+   <record id="fast_inredning" model="agreement.responsibility.category">
+    <field name="name">Fast inredning</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+
+  <record id="restaurangkok" model="agreement.responsibility.category">
+    <field name="name">Restaurankök</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+
+  <record id="forrad_ekonomiutrymmen" model="agreement.responsibility.category">
+    <field name="name">Förråd, ekonomiutrymmen</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+  
+  <record id="personalutrymmen" model="agreement.responsibility.category">
+    <field name="name">Personalutrymmen</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+  
+  <record id="vatrum" model="agreement.responsibility.category">
+    <field name="name">Våtrum</field>
+    <field name="parent_id" ref="restaurangens_lokaler" />
+  </record>
+
+  
+  <record id="tak_och_fasad" model="agreement.responsibility.line">
+    <field name="name">Tak och fasader</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="byggnaden" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="entre_och_andra_dorrar" model="agreement.responsibility.line">
+    <field name="name">Entré och andra dörrar som leder från lokalen</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="byggnaden" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+
+  <record id="entreytor" model="agreement.responsibility.line">
+    <field name="name">Entréytor</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="utomhusytor_tomtmark" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="angoringsyto" model="agreement.responsibility.line">
+    <field name="name">Angoringsytor</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="utomhusytor_tomtmark" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  
+    <record id="luftvarme" model="agreement.responsibility.line">
+    <field name="name">Luftvärme</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="varmecentraler" model="agreement.responsibility.line">
+    <field name="name">värmecentraler</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+  <record id="brandpostledning" model="agreement.responsibility.line">
+    <field name="name">Brandpostledning</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+  <record id="sprinkler" model="agreement.responsibility.line">
+    <field name="name">Sprinkleranläggning</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+  <record id="matare" model="agreement.responsibility.line">
+    <field name="name">Mätare</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+  <record id="ledningar" model="agreement.responsibility.line">
+    <field name="name">Ledningar</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="rumskyla" model="agreement.responsibility.line">
+    <field name="name">Rumskyla</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="franluftsventilation" model="agreement.responsibility.line">
+    <field name="name">Frånluftsventilation</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+
+  <record id="filter_spjall" model="agreement.responsibility.line">
+    <field name="name">Filter och spjäll</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="imkapor" model="agreement.responsibility.line">
+    <field name="name">Imkåpor</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+  <record id="inbrottslarm" model="agreement.responsibility.line">
+    <field name="name">Inbrottslarm</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="overfallslarm" model="agreement.responsibility.line">
+    <field name="name">Överfallslarm</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+
+
+  <record id="fasadbelysning" model="agreement.responsibility.line">
+    <field name="name">Fasadbelysning</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="skyltbelysning" model="agreement.responsibility.line">
+    <field name="name">Skyltbelysning</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+
+  <record id="personhissas" model="agreement.responsibility.line">
+    <field name="name">Personhissar - korg, dörr maskineri</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+  <record id="varuhiss" model="agreement.responsibility.line">
+    <field name="name">Gods/varuhiss - korg, dörr, maskineri</field>
+    <field name="owner">landlord</field>
+    <field name="maintenance_responsibility">landlord</field>
+    <field name="agreement_responsibility_category_id" ref="installationer" />
+    <field name="agreement_id" ref="hyresavtal"/>    
+  </record>
+
+</odoo>

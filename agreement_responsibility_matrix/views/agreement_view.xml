@@ -11,11 +11,11 @@
                     <page string="Responsibility Matrix">
                         <field name="agreement_responsibility_line_ids">
                             <list>
+                                <field name="agreement_responsibility_category_id"/>
                                 <field name="name"/>
                                 <field name="owner"/>
                                 <field name="maintenance_responsibility"/>
                                 <field name="remarks"/>
-                                <field name="agreement_responsibility_category_id"/>
                             </list>
                         </field>
                     </page>
