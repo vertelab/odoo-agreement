@@ -49,7 +49,7 @@ msgstr "Kategori"
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__child_id
 msgid "Child Categories"
-msgstr "Kategorier för barn"
+msgstr "Underliggande kategori"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__complete_name
@@ -117,12 +117,12 @@ msgstr "Ägare"
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__parent_id
 msgid "Parent"
-msgstr "Förälder"
+msgstr "Överliggande"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__parent_path
 msgid "Parent Path"
-msgstr "Föräldrarnas väg"
+msgstr "Överliggande sökväg"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__remarks
