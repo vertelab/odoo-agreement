@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="agreement_category_form_view" model="ir.ui.view">
+        <field name="name">agreement.category.form</field>
+        <field name="model">agreement.category</field>
+        <field name="arch" type="xml">
+            <form class="oe_form_configuration">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button"
+                            name="action_view_agreements"
+                            icon="fa-th-list"
+                            type="object"
+                            context="{'search_default_categ_id': id, 'default_categ_id': id, 'group_expand': True}">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value"><field name="agreement_count"/></span>
+                                <span class="o_stat_text"> Agreements</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" string="Category"/>
+                        <h1><field name="name" placeholder="e.g. Rental"/></h1>
+                    </div>
+                    <group name="first" col="2">
+                        <field name="parent_id" class="oe_inline"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="agreement_category_list_view" model="ir.ui.view">
+        <field name="name">agreement.category.list</field>
+        <field name="model">agreement.category</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <list string="Agreement Categories">
+                <field name="display_name" string="Agreement Category"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="agreement_category_search_view" model="ir.ui.view">
+        <field name="name">agreement.category.search</field>
+        <field name="model">agreement.category</field>
+        <field name="arch" type="xml">
+            <search string="Agreement Categories">
+                <field name="name" string="Agreement Categories"/>
+                <field name="parent_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="agreement_category_action" model="ir.actions.act_window">
+        <field name="name">Agreement Categories</field>
+        <field name="res_model">agreement.category</field>
+        <field name="search_view_id" ref="agreement_category_search_view"/>
+        <field name="view_id" ref="agreement_category_list_view"/>
+    </record>
+
+    <menuitem
+        name="Categories"
+        id="agreement_categories"
+        parent="agreement_legal.agreement_configuration"
+        sequence="20"
+        action="agreement_category_action"
+    />
+
+</odoo>
