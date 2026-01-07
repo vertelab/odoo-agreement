@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="agreement_indexed_content_form_view" model="ir.ui.view">
+        <field name="name">agreement.form</field>
+        <field name="model">agreement</field>
+        <field name="inherit_id" ref="agreement_legal.partner_agreement_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[last()]" position="after">
+                <page string="Indexed Content" name="indexed_content">
+<!--                    <field name="attachment_ids"/>-->
+                    <field name="index_content"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="agreement_indexed_content_search_view" model="ir.ui.view">
+        <field name="name">agreement.search</field>
+        <field name="model">agreement</field>
+        <field name="inherit_id" ref="agreement_legal.partner_agreement_search_view"/>
+        <field name="arch" type="xml">
+            <field name="agreement_subtype_id" position="after">
+                <field name="index_content"/>
+            </field>
+        </field>
+    </record>
+</odoo>
