@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="agreement_type_required_form_view" model="ir.ui.view">
+        <field name="name">Agreement Type Form</field>
+        <field name="model">agreement.type</field>
+        <field name="inherit_id" ref="agreement.agreement_type_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <notebook>
+                    <page string="Required Fields" name="required_fields">
+                        <field name="required_fields" nolabel="1">
+                            <list editable="bottom">
+                                <field name="field_id" />
+                                <field name="is_required" />
+                                <field name="agreement_type_id" invisible="1"/>
+                            </list>
+                        </field>
+                    </page>
+                    <page string="Subtypes" name="agreement_subtypes">
+                        <field name="agreement_subtypes_ids" nolabel="1">
+                            <list editable="bottom">
+                                <field name="name" />
+                            </list>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="partner_agreement_type_form_view_extended" model="ir.ui.view">
+        <field name="name">Agreement Type Form</field>
+        <field name="model">agreement.type</field>
+        <field name="inherit_id" ref="agreement_legal.partner_agreement_type_form_view" />
+        <field name="arch" type="xml">
+            <field name="agreement_subtypes_ids" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>
