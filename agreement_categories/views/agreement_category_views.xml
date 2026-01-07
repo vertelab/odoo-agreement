@@ -5,7 +5,7 @@
         <field name="name">agreement.category.form</field>
         <field name="model">agreement.category</field>
         <field name="arch" type="xml">
-            <form class="oe_form_configuration">
+            <form>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button"
@@ -63,7 +63,7 @@
 
     <menuitem
         name="Categories"
-        id="agreement_categories"
+        id="agreement_category_menu"
         parent="agreement_legal.agreement_configuration"
         sequence="20"
         action="agreement_category_action"
