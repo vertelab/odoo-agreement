@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <record id="agreement_category_form_view" model="ir.ui.view">
+    <record id="agreement_form_view_extended" model="ir.ui.view">
         <field name="name">agreement.form</field>
         <field name="model">agreement</field>
         <field name="inherit_id" ref="agreement_legal.partner_agreement_form_view"/>
@@ -12,7 +12,7 @@
         </field>
     </record>
 
-    <record id="agreement_category_search" model="ir.ui.view">
+    <record id="agreement_search_extended" model="ir.ui.view">
         <field name="name">agreement.search</field>
         <field name="model">agreement</field>
         <field name="inherit_id" ref="agreement_legal.partner_agreement_search_view"/>
