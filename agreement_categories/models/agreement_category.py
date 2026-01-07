@@ -33,8 +33,8 @@ class AgreementCategory(models.Model):
 
     def _compute_agreement_count(self):
         read_group_res = self.env['agreement']._read_group([
-            ('agreement_category_id', 'child_of', self.ids)
-        ], ['agreement_category_id'], ['__count'])
+            ('category_id', 'child_of', self.ids)
+        ], ['category_id'], ['__count'])
         group_data = {agreement_category.id: count for agreement_category, count in read_group_res}
         for agreement_category in self:
             agreement_count = 0

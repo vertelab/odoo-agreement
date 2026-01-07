@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="agreement_tag_form_view" model="ir.ui.view">
+        <field name="name">agreement.tag.form</field>
+        <field name="model">agreement.tag</field>
+        <field name="arch" type="xml">
+            <form string="Agreement Tags">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_agreement_tag_list" model="ir.ui.view">
+        <field name="name">agreement.tag.list</field>
+        <field name="model">agreement.tag</field>
+        <field eval="8" name="priority"/>
+        <field name="arch" type="xml">
+            <list string="Agreement Tags" editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="agreement_tag_action" model="ir.actions.act_window">
+        <field name="name">Agreement Tags</field>
+        <field name="res_model">agreement.tag</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Tags found ! Let's create one
+            </p>
+            <p>
+                Use tags to categorize your Agreements.
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        name="Tags"
+        id="agreement_category_menu"
+        parent="agreement_legal.agreement_configuration"
+        sequence="20"
+        action="agreement_tag_action"
+    />
+
+</odoo>

@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="agreement_legal.partner_agreement_form_view"/>
         <field name="arch" type="xml">
             <field name="code" position="after">
-                <field name="agreement_category_id"/>
+                <field name="category_id"/>
             </field>
         </field>
     </record>
@@ -18,7 +18,7 @@
         <field name="inherit_id" ref="agreement_legal.partner_agreement_search_view"/>
         <field name="arch" type="xml">
             <field name="name" position="after">
-                <field name="agreement_category_id"/>
+                <field name="category_id"/>
             </field>
         </field>
     </record>

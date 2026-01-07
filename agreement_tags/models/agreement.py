@@ -5,4 +5,4 @@ from odoo.exceptions import UserError, ValidationError
 class Agreement(models.Model):
     _inherit = "agreement"
 
-    category_id = fields.Many2one('agreement.category', string="Category")
+    tag_ids = fields.Many2many('agreement.tag', string="Tags")
