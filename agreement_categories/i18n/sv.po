@@ -1,0 +1,123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_categories
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-12 10:02+0000\n"
+"PO-Revision-Date: 2026-01-12 11:07+0100\n"
+"Last-Translator: Jakob Krabbe <jakob.krabbe@vertel.se>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: agreement_categories
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_form_view
+msgid "<span class=\"o_stat_text\"> Agreements</span>"
+msgstr "<span class=\"o_stat_text\"> Avtal</span>"
+
+#. module: agreement_categories
+#: model:ir.model,name:agreement_categories.model_agreement
+msgid "Agreement"
+msgstr "Avtal"
+
+#. module: agreement_categories
+#: model:ir.actions.act_window,name:agreement_categories.agreement_category_action
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_list_view
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_search_view
+msgid "Agreement Categories"
+msgstr "Avtalskategorier"
+
+#. module: agreement_categories
+#: model:ir.model,name:agreement_categories.model_agreement_category
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_list_view
+msgid "Agreement Category"
+msgstr "Avtalskategori"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__agreement_properties_definition
+msgid "Agreement Properties"
+msgstr "Avtalets egenskaper"
+
+#. module: agreement_categories
+#: model:ir.ui.menu,name:agreement_categories.agreement_category_menu
+msgid "Categories"
+msgstr "Kategorier"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement__category_id
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_form_view
+msgid "Category"
+msgstr "Kategori"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__child_id
+msgid "Child Categories"
+msgstr "Underliggande kategorier"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__complete_name
+msgid "Complete Name"
+msgstr "Fullständigt namn"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__create_uid
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__create_date
+msgid "Created on"
+msgstr "Skapad den"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__write_uid
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__write_date
+msgid "Last Updated on"
+msgstr "Senast uppdaterad den"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__name
+msgid "Name"
+msgstr "Namn"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__parent_id
+msgid "Parent Category"
+msgstr "Överliggande kategori"
+
+#. module: agreement_categories
+#: model:ir.model.fields,field_description:agreement_categories.field_agreement_category__parent_path
+msgid "Parent Path"
+msgstr "Överliggande sökväg"
+
+#. module: agreement_categories
+#. odoo-python
+#: code:addons/agreement_categories/models/agreement_category.py:0
+msgid "You cannot create recursive categories."
+msgstr "Du kan inte skapa rekursiva kategorier."
+
+#. module: agreement_categories
+#: model_terms:ir.ui.view,arch_db:agreement_categories.agreement_category_form_view
+msgid "e.g. Rental"
+msgstr "t.ex. Hyra"
