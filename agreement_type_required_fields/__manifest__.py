@@ -1,6 +1,6 @@
 {
-    'name': 'Agreement Required Fields',
-    'version': '18.0',
+    'name': 'Agreement: Required Fields',
+    'version': '1.0',
     'category': 'Agreement',
     'summary': 'Add required fields validation to agreement types',
     'description': """
