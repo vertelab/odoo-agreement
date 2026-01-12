@@ -1,0 +1,30 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_confidentiality
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-12 10:09+0000\n"
+"PO-Revision-Date: 2026-01-12 11:10+0100\n"
+"Last-Translator: Jakob Krabbe <jakob.krabbe@vertel.se>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: agreement_confidentiality
+#: model:ir.model,name:agreement_confidentiality.model_agreement
+msgid "Agreement"
+msgstr "Avtal"
+
+#. module: agreement_confidentiality
+#: model:ir.model.fields,field_description:agreement_confidentiality.field_agreement__is_confidential
+#: model_terms:ir.ui.view,arch_db:agreement_confidentiality.agreement_confidential_form_view
+#: model_terms:ir.ui.view,arch_db:agreement_confidentiality.agreement_confidential_search_view
+msgid "Confidential"
+msgstr "Konfidentiell"
