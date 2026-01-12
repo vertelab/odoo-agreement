@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Agreement Responsibility Matrix",
+    "name": "Agreement: Responsibility Matrix",
     "summary": "Adds an agreement responsibility matrix",
     "version": "1.0.0",
     "category": "Contract",
