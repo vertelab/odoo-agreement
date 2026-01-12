@@ -1,0 +1,94 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_type_required_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-12 10:36+0000\n"
+"PO-Revision-Date: 2026-01-12 11:40+0100\n"
+"Last-Translator: Jakob Krabbe <jakob.krabbe@vertel.se>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: agreement_type_required_fields
+#: model:ir.model,name:agreement_type_required_fields.model_agreement
+msgid "Agreement"
+msgstr "Avtal"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__agreement_type_id
+msgid "Agreement Type"
+msgstr "Avtalstyp"
+
+#. module: agreement_type_required_fields
+#: model:ir.model,name:agreement_type_required_fields.model_agreement_type
+msgid "Agreement Types"
+msgstr "Avtalstyper"
+
+#. module: agreement_type_required_fields
+#: model:ir.model,name:agreement_type_required_fields.model_agreement_type_required_fields
+msgid "Agreement Types Required Fields"
+msgstr "Avtalstyper Obligatoriska fält"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__create_uid
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__create_date
+msgid "Created on"
+msgstr "Skapad den"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__field_id
+msgid "Fields"
+msgstr "Fält"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__id
+msgid "ID"
+msgstr "ID"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__is_required
+msgid "Is Required"
+msgstr "Är obligatorisk"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__write_uid
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__write_date
+msgid "Last Updated on"
+msgstr "Senast uppdaterad den"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type_required_fields__name
+msgid "Name"
+msgstr "Namn"
+
+#. module: agreement_type_required_fields
+#: model:ir.model.fields,field_description:agreement_type_required_fields.field_agreement_type__required_fields
+#: model_terms:ir.ui.view,arch_db:agreement_type_required_fields.agreement_type_required_form_view
+msgid "Required Fields"
+msgstr "Obligatoriska fält"
+
+#. module: agreement_type_required_fields
+#: model_terms:ir.ui.view,arch_db:agreement_type_required_fields.agreement_type_required_form_view
+msgid "Subtypes"
+msgstr "Undertyper"
