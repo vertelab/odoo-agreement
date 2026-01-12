@@ -1,7 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Agreement Confidentiality',
+    'name': 'Agreement: Confidentiality',
     'version': '1.2',
     'category': 'Agreement',
     'depends': ['agreement_legal'],
