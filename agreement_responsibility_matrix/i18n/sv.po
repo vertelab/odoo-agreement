@@ -4,26 +4,29 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0-20250911\n"
+"Project-Id-Version: Odoo Server 18.0-20260105\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-18 13:01+0000\n"
-"PO-Revision-Date: 2025-09-18 13:01+0000\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2026-01-12 10:12+0000\n"
+"PO-Revision-Date: 2026-01-12 11:28+0100\n"
+"Last-Translator: Jakob Krabbe <jakob.krabbe@vertel.se>\n"
 "Language-Team: \n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model,name:agreement_responsibility_matrix.model_agreement
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__agreement_id
 msgid "Agreement"
 msgstr "Avtal"
 
 #. module: agreement_responsibility_matrix
-#: model:ir.model,name:agreement_responsibility_matrix.model_agreement
-msgid "Agreement Extension"
-msgstr "Relaterad fastighet"
+#: model:ir.model,name:agreement_responsibility_matrix.model_agreement_category
+msgid "Agreement Category"
+msgstr "Avtalskategori"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model,name:agreement_responsibility_matrix.model_agreement_responsibility_category
@@ -33,23 +36,34 @@ msgstr "Avtal Ansvar Kategori"
 #. module: agreement_responsibility_matrix
 #: model:ir.model,name:agreement_responsibility_matrix.model_agreement_responsibility_line
 msgid "Agreement Responsibility Line"
-msgstr "Avtal Ansvarslinje"
+msgstr "Avtal Ansvarsrad"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement__agreement_responsibility_line_ids
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__agreement_responsibility_line_ids
 msgid "Agreement Responsibility Lines"
-msgstr "Avtal Ansvarslinjer"
+msgstr "Avtal Ansvarsrader"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement__category_id
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__agreement_responsibility_category_id
 msgid "Category"
 msgstr "Kategori"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement__child_ids
+msgid "Child Agreements"
+msgstr "Underordnat avtal"
+
+#. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__child_id
 msgid "Child Categories"
-msgstr "Underliggande kategori"
+msgstr "Underordnade avtal"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__child_ids
+msgid "Children"
+msgstr "Underordnad"
 
 #. module: agreement_responsibility_matrix
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__complete_name
@@ -57,24 +71,33 @@ msgid "Complete Name"
 msgstr "Fullständigt namn"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model,name:agreement_responsibility_matrix.model_create_agreement_wizard
+msgid "Create Agreement Wizard"
+msgstr "Skapa avtalsguide"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__create_uid
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__create_uid
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__create_uid
 msgid "Created by"
 msgstr "Skapad av"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__create_date
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__create_date
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__create_date
 msgid "Created on"
 msgstr "Skapad på"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__display_name
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__display_name
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__display_name
 msgid "Display Name"
 msgstr "Visningsnamn"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__id
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__id
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__id
 msgid "ID"
@@ -87,12 +110,14 @@ msgid "Landlord"
 msgstr "Hyresvärd"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__write_uid
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__write_uid
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__write_uid
 msgid "Last Updated by"
 msgstr "Senast uppdaterad av"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__write_date
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__write_date
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__write_date
 msgid "Last Updated on"
@@ -104,6 +129,7 @@ msgid "Maintenance Responsibility"
 msgstr "Ansvar för underhåll"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__name
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__name
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_line__name
 msgid "Name"
@@ -120,6 +146,17 @@ msgid "Parent"
 msgstr "Överliggande"
 
 #. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement__parent_id
+msgid "Parent Agreement"
+msgstr "Överliggande avtal"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__parent_id
+msgid "Parent Category"
+msgstr "Överliggande kategori"
+
+#. module: agreement_responsibility_matrix
+#: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_category__parent_path
 #: model:ir.model.fields,field_description:agreement_responsibility_matrix.field_agreement_responsibility_category__parent_path
 msgid "Parent Path"
 msgstr "Överliggande sökväg"
