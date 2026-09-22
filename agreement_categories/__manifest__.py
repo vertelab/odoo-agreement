@@ -1,6 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
+    'website': 'https://vertel.se/apps/odoo-agreement/agreement_categories',
     'name': 'Agreement: Categories',
     'version': '1.2',
     'category': 'Agreement',

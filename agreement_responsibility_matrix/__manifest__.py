@@ -7,7 +7,7 @@
     "version": "1.0.0",
     "category": "Contract",
     "author": "Vertel AB",
-    "website": "https://github.com/vertelab/odoo-agreement",
+    "website": "https://vertel.se/apps/odoo-agreement/agreement_responsibility_matrix",
     "license": "AGPL-3",
     "depends": ["agreement","agreement_legal"],
 

@@ -1,6 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
+    'website': 'https://vertel.se/apps/odoo-agreement/agreement_attachment_content',
     'name': 'Agreement: Attachment Content',
     'version': '1.2',
     'category': 'Agreement',

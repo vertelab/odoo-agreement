@@ -11,7 +11,7 @@
         * Automatic validation of required fields on create/write
     """,
     'author': 'Vertel AB',
-    'website': 'https://www.vertel.se',
+    'website': 'https://vertel.se/apps/odoo-agreement/agreement_type_required_fields',
     'depends': [
         'agreement',
     ],
