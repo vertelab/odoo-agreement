@@ -3,10 +3,21 @@
 {
     'website': 'https://vertel.se/apps/odoo-agreement/agreement_tags',
     'name': 'Agreement: Tags',
-    'version': '1.2',
+    'summary': "Adds tags to agreements.",
+    'version': '18.0.1.2.0',
     'category': 'Agreement',
     'depends': ['agreement_legal', 'mail'],
-    'description': """This is module adds tags to agreement.""",
+    'description': '''
+Tags
+====
+
+    Adds tags to agreements.
+
+    Features:
+
+        - UI Integration: Extends 2 view(s) in the Odoo interface.
+        - Extends Odoo: Builds on agreement, agreement.tag.
+    ''',
     'data': [
         'security/ir.model.access.csv',
         'views/agreement_tag_views.xml',

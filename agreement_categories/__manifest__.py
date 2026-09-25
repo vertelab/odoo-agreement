@@ -3,10 +3,21 @@
 {
     'website': 'https://vertel.se/apps/odoo-agreement/agreement_categories',
     'name': 'Agreement: Categories',
-    'version': '1.2',
+    'summary': "Adds hierarchical categories to agreements.",
+    'version': '18.0.1.2.0',
     'category': 'Agreement',
     'depends': ['agreement_legal', 'mail'],
-    'description': """This is module adds category field to agreement.""",
+    'description': '''
+Categories
+==========
+
+    Adds hierarchical categories to agreements.
+
+    Features:
+
+        - UI Integration: Extends 2 view(s) in the Odoo interface.
+        - Extends Odoo: Builds on agreement, agreement.category, complete_name, mail.thread.
+    ''',
     'data': [
         'security/ir.model.access.csv',
         'views/agreement_category_views.xml',

@@ -4,7 +4,7 @@
 {
     "name": "Agreement: Responsibility Matrix",
     "summary": "Adds an agreement responsibility matrix",
-    "version": "1.0.0",
+    'version': '18.0.1.0.0',
     "category": "Contract",
     "author": "Vertel AB",
     "website": "https://vertel.se/apps/odoo-agreement/agreement_responsibility_matrix",
