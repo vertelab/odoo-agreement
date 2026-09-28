@@ -7,7 +7,10 @@ odoo-agreement/agreement_tags/static/description/banner.png
 odoo-agreement/agreement_tags/static/description/icon.png
 
 
-Icon: "Agreement: Tags"
+Icon: "tag"
+icon_tag.png
+icon_tag_50.png
+icon_tag_50_neg.png
 https://fontawesome.com/v6/icons
 
 
@@ -15,8 +18,8 @@ Odoo banner: 560 x 280
 Odoo icon: 140 x 140
 
 HEX
-#875A7B   (Odoo purple)
-#10B981   (accent)
+#930a57   (magenta - background gradient start)
+#8a077f   (purple - background gradient end)
 
 Source: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
 
