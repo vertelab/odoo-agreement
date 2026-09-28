@@ -144,7 +144,7 @@
          id="tspan2037"
          x="319.77063"
          y="153.03708"
-         style="stroke-width:1px">odoo-account</tspan><tspan
+         style="stroke-width:1px">odoo-agreement</tspan><tspan
          sodipodi:role="line"
          x="319.77063"
          y="171.78708"
@@ -156,7 +156,7 @@
        y="77.2"
        id="text2035"
        inkscape:export-xdpi="92"
-       inkscape:export-ydpi="92"><tspan sodipodi:role="line" x="369.0" y="77.2" style="font-size:26.6667px;text-anchor:middle;fill:#000000">Agreement: Categories</tspan></text>
+       inkscape:export-ydpi="92"><tspan sodipodi:role="line" x="369.0" y="77.2" style="font-size:26.6667px;text-anchor:middle;fill:#000000">Categories</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot844"
