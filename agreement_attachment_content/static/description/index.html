@@ -54,12 +54,15 @@
 <div class="container">
   <section id="overview">
     <h2>Overview</h2>
-    <p>Indexes the content of agreement attachments.</p>
+    <p>Makes the <i>content</i> of agreement attachments searchable. Odoo already extracts the text of uploaded documents; this module collects that text onto the agreement itself as a computed field.</p>
+    <p>The field is searchable, so you can find an agreement by a word that only appears inside one of its attachments.</p>
+    <p><strong>Typical use:</strong> Use it when you need to find contracts by what is written inside the attached documents, not just by their metadata.</p>
   </section>
   <section id="features">
     <h2>Key Features</h2>
     <div class="feature-grid">
-      <div class="feature-card"><h4>UI integration</h4><p>Extends 1 view(s) in the Odoo interface.</p></div>
+      <div class="feature-card"><h4>Indexed content field</h4><p>A computed, searchable text field that gathers the extracted content of all attachments on the agreement.</p></div>
+      <div class="feature-card"><h4>Attachment search</h4><p>Searching the field resolves to the agreements whose attachments contain the term.</p></div>
     </div>
   </section>
   <section id="screenshots">

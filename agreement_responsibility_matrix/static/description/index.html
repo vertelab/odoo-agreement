@@ -44,7 +44,7 @@
 <body>
 <div class="hero">
   <h1>Agreement: Responsibility Matrix</h1>
-  <p class="subtitle">Adds an agreement responsibility matrix.</p>
+  <p class="subtitle">Adds a responsibility matrix to agreements.</p>
   <div class="meta">
     <span>Odoo 18.0</span><span>&middot;</span>
     <span>Contract</span><span>&middot;</span>
@@ -54,14 +54,17 @@
 <div class="container">
   <section id="overview">
     <h2>Overview</h2>
-    <p>Adds an agreement responsibility matrix.</p>
-    <p>It introduces the model(s) <code>AgreementResponsibilityLine</code>, <code>AgreementResponsibilityCategory</code>, <code>AgreementCategory</code> to handle this workflow.</p>
+    <p>Adds a responsibility matrix to agreements — a structured list of who is responsible for what. Each line records an item, who owns it and who is responsible for maintenance, plus free-text remarks.</p>
+    <p>The matrix is organised by its own category tree, and when an agreement is created from a template the matrix is copied over automatically.</p>
+    <p><strong>Typical use:</strong> Use it for lease and maintenance agreements where each party’s obligations must be spelled out line by line.</p>
   </section>
   <section id="features">
     <h2>Key Features</h2>
     <div class="feature-grid">
-      <div class="feature-card"><h4>Dedicated data model</h4><p>Adds its own models: AgreementResponsibilityLine, AgreementResponsibilityCategory, AgreementCategory.</p></div>
-      <div class="feature-card"><h4>UI integration</h4><p>Extends 2 view(s) in the Odoo interface.</p></div>
+      <div class="feature-card"><h4>Responsibility lines</h4><p>Each agreement gets a list of responsibility lines with owner and maintenance responsibility (landlord / tenant) and remarks.</p></div>
+      <div class="feature-card"><h4>Category tree</h4><p>Lines are organised in a hierarchical <code>agreement.responsibility.category</code> tree with complete names.</p></div>
+      <div class="feature-card"><h4>Template copy</h4><p>When an agreement is created from a template, the template’s matrix is copied to the new agreement.</p></div>
+      <div class="feature-card"><h4>Parent / child agreements</h4><p>Agreements can be linked as parent and child, so a main agreement can carry sub-agreements.</p></div>
     </div>
   </section>
   <section id="screenshots">

@@ -44,7 +44,7 @@
 <body>
 <div class="hero">
   <h1>Agreement: Tags</h1>
-  <p class="subtitle">Adds tags to agreements.</p>
+  <p class="subtitle">Adds colour-coded tags to agreements for flexible grouping.</p>
   <div class="meta">
     <span>Odoo 18.0</span><span>&middot;</span>
     <span>Agreement</span><span>&middot;</span>
@@ -54,14 +54,16 @@
 <div class="container">
   <section id="overview">
     <h2>Overview</h2>
-    <p>Adds tags to agreements.</p>
-    <p>It introduces the model(s) <code>AgreementTag</code> to handle this workflow.</p>
+    <p>Adds a free-form tagging system to agreements. Each tag has a name and a colour, and an agreement can carry any number of tags — so you can group contracts by almost anything (customer, market, risk level, renewal quarter) without creating a rigid category tree.</p>
+    <p>Tags are shown as coloured chips on the agreement form and can be used to group the agreement list.</p>
+    <p><strong>Typical use:</strong> Use it when agreements need several overlapping groupings that a single category tree cannot express.</p>
   </section>
   <section id="features">
     <h2>Key Features</h2>
     <div class="feature-grid">
-      <div class="feature-card"><h4>Dedicated data model</h4><p>Adds its own models: AgreementTag.</p></div>
-      <div class="feature-card"><h4>UI integration</h4><p>Extends 2 view(s) in the Odoo interface.</p></div>
+      <div class="feature-card"><h4>Tag model</h4><p>A dedicated <code>agreement.tag</code> model with a name and colour, unique by name.</p></div>
+      <div class="feature-card"><h4>Colour-coded chips</h4><p>Tags are displayed on the agreement form as coloured chips (many2many_tags with colour).</p></div>
+      <div class="feature-card"><h4>Group by tag</h4><p>A "Tags" filter in the agreement search view lets you group the list by tag.</p></div>
     </div>
   </section>
   <section id="screenshots">

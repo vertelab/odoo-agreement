@@ -44,7 +44,7 @@
 <body>
 <div class="hero">
   <h1>Agreement: Required Fields</h1>
-  <p class="subtitle">Add required fields validation to agreement types.</p>
+  <p class="subtitle">Adds required-field validation to agreement types.</p>
   <div class="meta">
     <span>Odoo 18.0</span><span>&middot;</span>
     <span>Agreement</span><span>&middot;</span>
@@ -54,14 +54,15 @@
 <div class="container">
   <section id="overview">
     <h2>Overview</h2>
-    <p>Add required fields validation to agreement types.</p>
-    <p>It introduces the model(s) <code>AgreementTypeRequiredFields</code> to handle this workflow.</p>
+    <p>Lets each agreement <i>type</i> define which agreement fields must be filled in. You pick the fields on the type, mark them as required, and Odoo then validates them whenever an agreement of that type is saved.</p>
+    <p>This makes it possible to enforce different completeness rules for different kinds of contracts.</p>
+    <p><strong>Typical use:</strong> Use it to guarantee that, for example, every sales agreement has a value and an end date before it can be saved.</p>
   </section>
   <section id="features">
     <h2>Key Features</h2>
     <div class="feature-grid">
-      <div class="feature-card"><h4>Dedicated data model</h4><p>Adds its own models: AgreementTypeRequiredFields.</p></div>
-      <div class="feature-card"><h4>UI integration</h4><p>Extends 1 view(s) in the Odoo interface.</p></div>
+      <div class="feature-card"><h4>Required fields per type</h4><p>Each agreement type carries a list of required fields, chosen from the fields available on the agreement model.</p></div>
+      <div class="feature-card"><h4>Validation on save</h4><p>Saving an agreement of a given type is blocked until all fields marked required for that type are filled in.</p></div>
     </div>
   </section>
   <section id="screenshots">

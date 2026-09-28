@@ -54,15 +54,17 @@
 <div class="container">
   <section id="overview">
     <h2>Overview</h2>
-    <p>Adds hierarchical categories to agreements.</p>
-    <p>It introduces the model(s) <code>AgreementCategory</code> to handle this workflow.</p>
+    <p>Adds a category tree to agreements. Categories are hierarchical — a category can have a parent and any number of children — and each agreement is linked to one category.</p>
+    <p>The full path is shown as a computed name (for example <i>Legal / Supplier / IT</i>), and each category counts the agreements filed under it.</p>
+    <p><strong>Typical use:</strong> Use it to organise agreements in a single, browsable hierarchy that mirrors how the business is structured.</p>
   </section>
   <section id="features">
     <h2>Key Features</h2>
     <div class="feature-grid">
-      <div class="feature-card"><h4>Dedicated data model</h4><p>Adds its own models: AgreementCategory.</p></div>
-      <div class="feature-card"><h4>Actions</h4><p>Adds action_view_agreements.</p></div>
-      <div class="feature-card"><h4>UI integration</h4><p>Extends 2 view(s) in the Odoo interface.</p></div>
+      <div class="feature-card"><h4>Hierarchical tree</h4><p>Categories support parent/child nesting with cycle protection, and are ordered by their complete name.</p></div>
+      <div class="feature-card"><h4>Complete name</h4><p>The full path (parent / child) is computed and stored, so it is searchable and sortable.</p></div>
+      <div class="feature-card"><h4>Agreement count</h4><p>Each category shows how many agreements are filed under it, including child categories.</p></div>
+      <div class="feature-card"><h4>Properties</h4><p>Categories can define custom properties that apply to the agreements filed under them.</p></div>
     </div>
   </section>
   <section id="screenshots">
