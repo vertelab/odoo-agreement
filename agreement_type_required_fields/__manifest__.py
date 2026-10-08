@@ -18,7 +18,7 @@ Required Fields
         - UI Integration: Extends 1 view(s) in the Odoo interface.
         - Extends Odoo: Builds on agreement, agreement.type, agreement.type.required.fields.
     ''',
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se/apps/odoo-agreement/agreement_type_required_fields',
     'depends': [
         'agreement',

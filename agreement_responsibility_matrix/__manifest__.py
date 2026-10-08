@@ -6,7 +6,7 @@
     "summary": "Adds an agreement responsibility matrix",
     'version': '18.0.1.0.0',
     "category": "Contract",
-    "author": "Vertel AB",
+    "author": "Vertel Sverige AB",
     "website": "https://vertel.se/apps/odoo-agreement/agreement_responsibility_matrix",
     "license": "AGPL-3",
     "depends": ["agreement","agreement_legal"],
